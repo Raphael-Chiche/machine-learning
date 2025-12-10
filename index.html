@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Canvas de Dessin Simple</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
+  </head>
+  <body>
+    <div id="drawing-app">
+      <h1>Dessinez un chiffre (ou autre chose !)</h1>
+      <div id="status"></div>
+      <canvas id="drawingCanvas" width="280" height="280"></canvas>
+    
+      <button id="clearButton">Effacer</button>
+      <button id="predictButton">Prédire</button>
+      <p id="predictionResult"> Dessinez un chiffre et cliquez sur "Prédire" pour voir le résultat.</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
