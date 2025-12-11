@@ -164,7 +164,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         `F. Résultat final : Chiffre ${maxIndex} (Confiance/Score : ${maxVal})`
       );
       resultText.innerText = `Chiffre : ${maxIndex} / Probabilité : ${(
-        maxVal * 100
+        maxVal * 10
       ).toFixed(2)}%`;
     } catch (e) {
       console.error("❌ Erreur pendant la prédiction :", e);
